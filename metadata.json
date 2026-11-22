@@ -1,0 +1,6 @@
+{
+  "name": "Kie Studio — Real Kie.ai Image & Video Generation",
+  "description": "Production image and video generation console connected directly to the official Kie.ai API with live model catalog, verified credit pricing, multi-key vault, automatic key rotation, and real asynchronous task tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

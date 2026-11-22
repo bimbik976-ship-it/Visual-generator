@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Public Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-imperial-dark: #170D2B;
+  --color-royal-amethyst: #40205E;
+  --color-amethyst-purple: #7650A6;
+  --color-champagne-gold: #C5A45A;
+  --color-ivory-premium: #F4E8C9;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #FCFBF7;
+    color: #170D2B;
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(118, 80, 166, 0.14);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: #170D2B;
+  }
+
+  ::selection {
+    background-color: #F4E8C9;
+    color: #170D2B;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #7650A6;
+    outline-offset: 1px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pwa-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pwa-safe-top {
+  padding-top: env(safe-area-inset-top);
+}

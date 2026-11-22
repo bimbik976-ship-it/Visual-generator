@@ -1,0 +1,8 @@
+.git
+node_modules
+.data
+public
+.env
+.env.*
+!.env.example
+Kie-Studio-Vercel-Ready.zip
